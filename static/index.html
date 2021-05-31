@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link href="jquery.cssemoticons.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+    <script src="jquery.cssemoticons.js" type="text/javascript"></script>
+    <script src="lib/jquery.tinyscrollbar.js"></script>
+    <script src="lib/tinyscrollbar.js"></script>
+    <link rel="stylesheet" href="tinyscrollbar.css">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body onload="init()">
+    <div id="container">
+        <div id="scrollbar1">
+            <div class="scrollbar">
+                <div class="track">
+                    <div class="thumb">
+                        <div class="end"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="viewport">
+                <div id="messages" class="overview"></div>
+            </div>
+        </div>
+
+        <div id="inputBox">
+            <input type="text" name="text" id="mess">
+            <button id="send">Wyślij</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
