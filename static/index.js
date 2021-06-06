@@ -103,8 +103,11 @@ async function polling() {
     const headers = { "Content-Type": "application/json" }
 
     let data = await fetch("/lobby", { method: "post", body, headers })
-    data = await data.json()
-    addMessage(data)
+    if (data.status == 200) {
+
+        data = await data.json()
+        addMessage(data)
+    }
     polling()
 }
 
